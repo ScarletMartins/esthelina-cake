@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+.bk-quemsomos {
+  padding-top: 8vh;
+  height: 88vh;
+  background-color: #fbe7e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 0.1rem #7c4145;
+  font-family: "Lora", serif;
+  gap: 4rem;
+}
+
+.quemsomos {
+  width: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nossahistoria {
+  font-family: "Rouge Script", cursive;
+  font-size: 4rem;
+}
+
+.quemsomos-img img {
+  width: 90%;
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .quemsomos {
+    font-size: 1.2rem;
+  }
+
+  .quemsomos-img img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bk-quemsomos {
+    margin-top: 0;
+    /* height: 95vh; */
+    gap: 1rem;
+  }
+  .quemsomos {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .quemsomos-img img {
+    width: 95%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .bk-quemsomos {
+    margin-top: 0;
+    /* height: 100vh; */
+  }
+
+  .quemsomos {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .quemsomos-img {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .bk-quemsomos {
+    height: 120vh;
+  }
+
+  .nossahistoria {
+    /* margin-top: rem; */
+  }
+
+  .quemsomos {
+    height: 150vh;
+    font-size: 1rem;
+  }
+
+  .quemsomos-img {
+    display: none;
+  }
+}

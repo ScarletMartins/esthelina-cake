@@ -1,0 +1,35 @@
+.viewport-produtos {
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12vh;
+  /* background-image: url('https://imgur.com/d60k4eQ.png'); */
+  /* background-color: #fbe7e2; */
+}
+
+.carousel-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel.carousel-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70% !important;
+  height: 60vh;
+  border-radius: 8px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb {
+  height: 2.8rem;
+}

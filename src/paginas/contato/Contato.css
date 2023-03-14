@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.contact-bk {
+  min-height: 70vh;
+  background-image: url(https://imgur.com/DWbMwoS.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-footer {
+  min-height: 26vh;
+  background-color: #7c4145;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.address {
+  display: block;
+  color: #fbe7e2;
+  line-height: 2rem;
+  width: 50%;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+}
+
+.address p {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  line-height: 1.5rem;
+  width: 50%;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+}
+
+.social p {
+  color: #fbe7e2;
+}
+
+.social-icon {
+  color: #fbe7e2;
+  font-size: 2.5rem !important;
+}
+
+@media (max-width: 900px) {
+  .contact-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .address p {
+    font-size: 0.8rem;
+  }
+
+  .social {
+    display: block;
+    flex-direction: column;
+  }
+
+  .social-icon {
+    font-size: 1.5rem !important;
+  }
+
+  .social p {
+    font-size: 0.8rem;
+  }
+}

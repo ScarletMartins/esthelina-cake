@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box2 {
+  background-color: #fbe7e2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4vh;
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7c4145;
+}
+
+.MuiTypography-subtitle2 {
+  font-size: 1rem !important;
+}
+
+.social-icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 950px) {
+  .textos {
+    font-size: 0.5rem !important;
+  }
+
+  .MuiTypography-subtitle2 {
+    font-size: 0.6rem !important;
+  }
+}

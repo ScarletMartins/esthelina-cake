@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.kit-festa {
+  background-image: url("https://imgur.com/JtWG3m9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 88vh;
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-kit {
+  font-family: "Rouge Script", cursive; 
+  font-size: 5rem;
+  font-weight: 600;
+  color: #7c4145;
+}
+
+.texto-kits {
+  padding: 3rem;
+  padding-top: 1rem;
+  letter-spacing: 0.1rem;
+  text-indent: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Lora', serif;
+}
+
+.kit-festa-cards {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.first-line-cake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.second-line-cake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* -------------------- */
+
+.card {
+  width: 13rem;
+  height: 18rem;
+  border-radius: 1.2rem;
+  background-image: url("https://imgur.com/gn7NaAL.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 1.8rem;
+  border: 0.1rem solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #7c4145;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: rgb(88, 87, 87);
+  font-family: 'Lora', serif;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Lora', serif;
+}
+
+/* Price */
+.text-price {
+  padding-top: 1rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Lora', serif;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: #7c4145;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+/* ----------- */
+
+.features {
+  position: relative;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  border: 2px solid #7c4145;
+  background: #fbe7e2;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lora', serif;
+}
+
+.features:before,
+.features:after {
+  content: "";
+  position: absolute;
+  background: #fbe7e2;
+  transition: all 0.2s linear;
+}
+
+.features:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 0.5rem;
+  left: -3px;
+}
+
+.features:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 0.5rem;
+}
+
+.features:hover {
+  cursor: crosshair;
+}
+
+.features:active {
+  transform: scale(0.95);
+}
+
+.features:hover:before {
+  height: calc(100% - 32px);
+  top: 1rem;
+}
+
+.features:hover:after {
+  width: calc(100% - 32px);
+  left: 1rem;
+}
+
+.features span {
+  font-size: 0.9rem;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .kit-festa {
+    background-image: url("https://imgur.com/JtWG3m9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card {
+    width: 7rem;
+    height: 15rem;
+    position: relative;
+    padding: 1.8rem;
+  }
+
+  .text-title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  /* Price */
+  .text-price {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 950px) {
+  .kit-festa {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://imgur.com/JtWG3m9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .kit-festa-cards {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 8rem;
+    height: 18rem;
+    padding: 1.8rem;
+  }
+
+  /*Text*/
+  .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  /* Price */
+  .text-price {
+    padding-top: 1rem;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .titulo-kit {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    color: #7c4145;
+  }
+
+  .texto-kits {
+    padding: 3rem;
+    padding-top: 2rem;
+    text-indent: 2rem;
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  @media (min-width: 720px) and (max-width: 950px) {
+    .card {
+      width: 10rem;
+      height: 18rem;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .kit-festa {
+      background-image: url("https://imgur.com/kOXrKvC.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .card {
+      width: 15rem;
+      height: 23rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .first-line-cake {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .second-line-cake {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .features span {
+      font-size: 0.7rem;
+      z-index: 3;
+      position: relative;
+      font-weight: 400;
+    }
+
+    .texto-kits {
+      padding: 1.5rem;
+      padding-top: 1rem;
+      letter-spacing: 0.1rem;
+      text-indent: 2rem;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+  }
+}
